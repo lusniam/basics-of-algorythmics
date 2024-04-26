@@ -1,0 +1,2 @@
+kod=int(input('Podaj cyfre: '))
+print('niepoprawny kod' if kod<0 or kod>122 else ('znak spcjalny' if kod<=31 else ('inny znak' if 32<=kod<=47 or 58<=kod<=64 or 91<=kod<=96 else ('cyfra' if 48<=kod<=57 else ('duża litera' if kod<91 else 'mała litera')))))
